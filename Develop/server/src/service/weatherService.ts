@@ -40,14 +40,8 @@ class Weather {
 class WeatherService {
   // TODO: Define the baseURL, API key, and city name properties
 
-  /*
-private baseUrl:string =process.env.API_BASE_URL || "https://api.openweathermap.org/data/2.5/forecast";
-private apiKey: string= process.env.API_KEY || "";
-private cityName:string= "";
-*/
-
-  private baseURL: string = "https://api.openweathermap.org";
-  private apiKey: string = "cca0e752c7ffb89f86cb631b38627ed5";
+  private baseURL: string = process.env.API_BASE_URL ||  "https://api.openweathermap.org";
+  private apiKey: string = process.env.API_KEY || "cca0e752c7ffb89f86cb631b38627ed5";
   private cityName: string = "";
 
   // TODO: Create fetchLocationData method
